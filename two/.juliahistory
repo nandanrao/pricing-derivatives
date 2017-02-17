@@ -1,0 +1,384 @@
+randn()
+randn(1000)
+?randn
+randn(1000)*1.5
+using Distributions
+plot(randn(1000)*1.5)
+using Gadfly
+plot(randn(1000)*1.5)
+plot(x = randn(1000)*1.5, Geom.histogram)
+nle
+mle
+Normal.mlr
+Normal().mle
+mle
+fit
+fit(Normal(), randn(1000), *5)
+fit(Normal(), randn(1000)*5)
+fit(Normal, randn(1000)*5)
+fit(Normal, randn(1000)*5)
+fit(Normal, randn(1000)*5)
+exp
+len
+size
+length
+2 - 1.5^2/2
+1.5^2
+1.5^2/2
+2 - 1.5^2/2
+[1,2,3] + 5
+[1,2,3] ++ 5
+concat
+append
+push
+[].append
+[].concat
+[[1,2,3], 1]
+?Array
+++
+.+
+add
+append!([], 1)
+?reduce
+traj
+rtaj
+traj
+length(path)
+tail
+[1][-1]
+[1][end]
+[1,2,3][end]
+a = [1,2,3]
+a[end]
+a
+append!(a, a[end] + 5)
+?reduce
+rand(Normal(0,1.5), 1000)
+[1,2,3]
+traj
+traj[1]
+traj
+set_default_plot_size(9inch, 7inch)
+path
+plot(x = path, Geom.histogram)
+zip
+zip([1,2,3], [4,5,6])
+exp(1)
+log(exp(1))
+range
+range(0, 5, 1/100)
+?range
+range(0, 1/100, 5)
+time
+path
+zip(path, time)
+geometric(path, time, 2, 1.5)
+zip(time, path)
+[z for (z,a) in zip(time, path)]
+length(time)
+length(path)
+zip(time, path)[0]
+zip(time, path)[1]
+for (a,b) in zip(time, path): 
+for (a,b) in zip(time, path)
+print(a)
+end
+time
+time
+time
+length(time)
+length(range(0,5))
+length(range(0,.1,5))
+range(0,.1,5)
+make_time(1000,5)
+length(make_time(1000,5))
+set_default_plot_size(10inch, 7inch)
+path
+lag
+plot(x = path, Geom.histogram)
+fit(Normal(), path)
+fit(Normal, path)
+fit(Normal, brownian(1000,5))
+fit(Normal, brownian(1000,5))
+fit(Normal, brownian(1000,5))
+fit(Normal, brownian(1000,5))
+fit(Normal, brownian(1000,5))
+fit(Normal, brownian(1000,5))
+fit(Normal, brownian(1000,5))
+fit(Normal, brownian(1000,5))
+5/1000
+[brownian(100, 5) for _ in 1:100]
+[brownian(100, 5)[end] for _ in 1:100]
+plot(x = [brownian(100, 5)[end] for _ in 1:100], Geom.histogram)
+plot(x = [brownian(100, 5)[end] for _ in 1:1000], Geom.histogram)
+5/100
+5
+plot(x = [brownian(100, 5)[end] for _ in 1:5000], Geom.histogram)
+plot(x = [brownian(100, 5)[end] for _ in 1:5000], Geom.histogram)
+plot(x = [b for _ in 1:5000 for b in brownina(100,5)], Geom.histogram)
+plot(x = [b for _ in 1:5000 for b in brownian(100,5)], Geom.histogram)
+plot(x = [b for _ in 1:5000 for b in brownian(100,1)], Geom.histogram)
+brownian
+brownian()
+plot(x = [b for _ in 1:5000 for b in brownian(100,1)], Geom.histogram)
+plot(x = [b for _ in 1:50 for b in brownian(100,1)], Geom.histogram)
+T
+N
+Normal(0, 1/100)
+path = brownian(1000,1)
+plot(x = [b for _ in 1:5000 for b in brownian(100,50)], Geom.histogram)
+plot(x = [b for _ in 1:5000 for b in brownian(100,1)], Geom.histogram)
+Binomial
+Binomial()
+rand(Binomial(),1)
+rand(Binomial(),1)
+rand(Binomial(),1)
+rand(Binomial(),1)
+rand(Binomial(),1)
+rand(Binomial(),1)
+rand(Binomial(),1)
+rand(Binomial(),1)
+rand(Binomial(),1)
+rand(Binomial(),10)
+rand(Binomial(),10)
+coin_flip(100)
+coin_flip(100)
+coin_flip(100)
+coin_flip(100)
+coin_flip(100)
+psuedo_brownian(100,1)
+sqrt(100,1)
+sqrt(1,100)
+sqrt(1/100)
+coin_flip(100)
+coin_flip(100) * sqrt(1/100)
+psuedo_brownian(100,1)
+coin_flip(100) * sqrt(1/100)
+make_walk(coin_flip(100) * sqrt(1/100))
+make_walk([1,2,3])
+make_walk(coin_flip(100) * sqrt(1/100))
+make_walk([1.1, .1, .2])
+make_walk
+?make_walk
+make_walk([1,2,3])
+make_walk([1.1,2.1,3.0])
+make_walk([1,2,3])
+make_walk
+psuedo_brownian(100,1)
+psuedo_brownian(100,1)
+plot(x = psuedo_brownian(100,1), geom_histogram)
+plot(x = psuedo_brownian(100,1), Geom.line)
+plot(x = psuedo_brownian(300,1), Geom.line)
+plot(x = range(0,.01, 100), y = psuedo_brownian(300,1), Geom.line)
+plot(x = range(0,0.01, 100), y = psuedo_brownian(300,1), Geom.line)
+plot(x = range(0,0.01, 300), y = psuedo_brownian(300,1), Geom.line)
+range(0,.01,300)
+length(range(0,.01,300))
+psuedo_brownian(100,1)
+length(psuedo_brownian(100,1))
+plot(x = range(0,0.01, 300), y = psuedo_brownian(300,1), Geom.line)
+plot(x = range(0,0.01, 300), y = psuedo_brownian(300,1), Geom.line)
+length(range(0,0.01, 300)) == length(psuedo_brownian(300,1))
+length(range(0,0.01, 300)), length(psuedo_brownian(300,1))
+length(range(0,0.01, 300)), length(psuedo_brownian(300,1))
+N
+length(range(0,0.01, 300)), length(psuedo_brownian(300,1))
+length(psuedo_brownian(300,1))
+length(psuedo_brownian(200,1))
+length(range(0,0.01, 300)), length(psuedo_brownian(300,1))
+length(range(0,0.01, 300)), length(psuedo_brownian(300,1))
+length(range(0,0.01, 300)), length(psuedo_brownian(300,1))
+plot(x = range(0,0.01, 300), y = psuedo_brownian(300,1), Geom.line)
+plot(x = range(0,1/500,500), y = psuedo_brownian(500,1), Geom.line)
+plot(x = range(0,1/5000,5000), y = psuedo_brownian(5000,1), Geom.line)
+psuedo_brownian(100,5)
+brownian(100,5)
+brownian(100,1)
+rand(Normal(0, sqrt(T/N)))
+rand(Normal(0, sqrt(5/1000)))
+rand(Normal(0, sqrt(5/1000)))
+time
+path
+plot(x = pseudo_brownian(1000,5), Geom.histogram)
+plot(x = pseudo_brownian(1000,5), Geom.histogram)
+plot(x = pseudo_brownian(1000,5), Geom.histogram)
+plot(x = pseudo_brownian(10000,5), Geom.histogram)
+plot(x = pseudo_brownian(10000,1), Geom.histogram)
+plot(x = brownian(10000,1), Geom.histogram)
+plot(x = [b for _ in 1:5000 for b in brownian(100,50)], Geom.histogram)
+plot(x = [b for _ in 1:5000 for b in psuedo_brownian(100,50)], Geom.histogram)
+plot(x = [b for _ in 1:5000 for b in psuedo_brownian(100,1)], Geom.histogram)
+plot(x = [b for _ in 1:5000 for b in psuedo_brownian(100,5)], Geom.histogram)
+plot(x = [b for _ in 1:5000 for b in brownian(100,5)], Geom.histogram)
+plot(x = [b for _ in 1:5000 for b in brownian(1000,10)], Geom.histogram)
+sqrt(10)
+plot(x = [b for _ in 1:5000 for b in brownian(1000,10^2)], Geom.histogram)
+path
+path
+path
+brownian(1000,1)
+time
+length(time)
+plot(x = [b for _ in 1:5000 for b in brownian(100,5^2)], Geom.histogram)
+fit(Normal,[b for _ in 1:5000 for b in brownian(100,5^2)])
+fit(Normal,[b for _ in 1:5000 for b in brownian(100,5^2)])
+fit(Normal,[b for _ in 1:5000 for b in brownian(100,5^2)])
+fit(Normal,[b for _ in 1:5000 for b in brownian(500,5^2)])
+fit(Normal,[b for _ in 1:5000 for b in brownian(500,5^2)])
+fit(Normal,[b for _ in 1:5000 for b in brownian(500,5^2)])
+fit(Normal,[b for _ in 1:5000 for b in brownian(500,5^2)])
+fit(Normal,[b for _ in 1:5000 for b in brownian(500,5^2)])
+fit(Normal,[b for _ in 1:5000 for b in brownian(500,5^2)])
+fit(Normal,[b for _ in 1:1000 for b in brownian(500,5^2)])
+fit(Normal,[b for _ in 1:1000 for b in brownian(500,2^2)])
+sqrt(5)
+sqrt(2)
+fit(Normal,[b for _ in 1:1000 for b in brownian(500,2^2)])
+fit(Normal,[b for _ in 1:1000 for b in brownian(500,2^2)])
+fit(Normal,[b for _ in 1:1000 for b in brownian(500,5)])
+fit(Normal,[b for _ in 1:1000 for b in brownian(500,5)])
+fit(Normal,[b for _ in 1:1000 for b in brownian(500,5)])
+fit(Normal,[b for _ in 1:1000 for b in brownian(500,10)])
+sqrt(10)
+sqrt(sqrt(10))
+sqrt(sqrt(10))
+sqrt(sqrt(10))
+make_walk(1,2,3,4,5)
+make_walk(1.0,2.0,3.0,4.0,5.0)
+make_walk([1,2,3,4,5])
+make_walk([1.0,2.0,3.0,4.0,5.0])
+fit(Normal,[b for _ in 1:1000 for b in brownian(500,10)])
+fit(Normal,[b for _ in 1:1000 for b in brownian(500,10)])
+fit(Normal,[b for _ in 1:1000 for b in brownian(500,10)])
+fit(Normal,[b for _ in 1:1000 for b in brownian(500,10)])
+fit(Normal,[b for _ in 1:1000 for b in brownian(500,10)])
+sqrt(10)
+10/500
+sqrt(10/500)
+sqrt(10/500) * randn(100)
+fit(Normal(),sqrt(10/500) * randn(10000))
+fit(Normal, sqrt(10/500) * randn(10000))
+fit(Normal, sqrt(10/500) * randn(10000))
+fit(Normal, sqrt(10/500) * randn(10000))
+10/500
+sqrt(10/500)
+fit(Normal, sqrt(10/500) * randn(10000))
+fit(Normal, randn(Normal(0, sqrt(10/500)), 1000))
+fit(Normal, rand(Normal(0, sqrt(10/500)), 1000))
+fit(Normal, rand(Normal(0, sqrt(10/500)), 1000))
+fit(Normal, rand(Normal(0, sqrt(10/500)), 1000))
+fit(Normal, rand(Normal(0, sqrt(10/500)), 1000))
+fit(Normal, rand(Normal(0, sqrt(10/500)), 1000))
+fit(Normal,[b for _ in 1:1000 for b in brownian(500,5)])
+5/500
+sqrt(5/500)
+fit(Normal,[b for _ in 1:1000 for b in brownian(500,5)])
+fit(Normal,[b for _ in 1:1000 for b in brownian(500,5)])
+fit(Normal,[b for _ in 1:1000 for b in brownian(500,1)])
+fit(Normal,[b for _ in 1:1000 for b in brownian(500,1)])
+fit(Normal,[b for _ in 1:1000 for b in brownian(500,1)])
+fit(Normal,[b for _ in 1:1000 for b in brownian(500,1)])
+sqrt(1)
+fit(Normal,[b for _ in 1:1000 for b in brownian(5000,1)])
+.7^2
+fit(Normal,[b for _ in 1:1000 for b in brownian(5000,1)])
+fit(Normal,[b for _ in 1:1000 for b in psuedo_brownian(5000,1)])
+fit(Normal,[b for _ in 1:1000 for b in pseudo_brownian(5000,1)])
+fit(Normal,[b for _ in 1:1000 for b in pseudo_brownian(5000,1)])
+fit(Normal,[b for _ in 1:1000 for b in pseudo_brownian(5000,1)])
+fit(Normal,[b for _ in 1:1000 for b in brownian(5000,1)])
+fit(Normal,[b for _ in 1:1000 for b in brownian(5000,10)])
+fit(Normal,[b for _ in 1:1000 for b in brownian(500,10)])
+fit(Normal,[b for _ in 1:1000 for b in brownian(50,10)])
+fit(Normal,[b for _ in 1:1000 for b in brownian(50,10)])
+fit(Normal,[b for _ in 1:1000 for b in brownian(50,10)])
+fit(Normal,[b for _ in 1:1000 for b in brownian(50,10)])
+fit(Normal,[b for _ in 1:1000 for b in brownian(5000,10)])
+fit(Normal,[b for _ in 1:1000 for b in brownian(5000,10)])
+fit(Normal,[b for _ in 1:1000 for b in brownian(5000,10)[1:100]])
+fit(Normal,[b for _ in 1:1000 for b in brownian(5000,10)[1:100]])
+fit(Normal,[b for _ in 1:1000 for b in brownian(1000,1)[1:100]])
+1/1000 * 100
+fit(Normal,[b for _ in 1:1000 for b in brownian(1000,1)[1:100]])
+.22^2
+fit(Normal,[b for _ in 1:1000 for b in brownian(1000,1)[1:100]])
+.22^2 * 1
+.22^2 * 2
+fit(Normal,[b for _ in 1:1000 for b in brownian(50,10)])
+2.144^2 *2
+2.144^2 *2
+fit(Normal,[b for _ in 1:1000 for b in brownian(50,10)])
+2.156^2 *2
+2.156^2 *2
+fit(Normal,[b for _ in 1:1000 for b in brownian(50,10)])
+2.233^2 *2
+fit(Normal,[b for _ in 1:1000 for b in brownian(50,10)])
+fit(Normal,[b for _ in 1:1000 for b in brownian(50,10)])
+fit(Normal,[b for _ in 1:1000 for b in brownian(50,10)])
+fit(Normal,[b for _ in 1:1000 for b in brownian(50,10)])
+fit(Normal,[b for _ in 1:1000 for b in brownian(50,10)])
+fit(Normal,[b for _ in 1:1000 for b in brownian(50,10)])
+make_time(100,1)
+make_time(100,2)
+length(make_time(1000,2))
+make_time(100,2)[1:2]
+make_time(100,2)[1:5]
+[i for i in make_time(100,2)]
+[i for i in make_time(100,2)]
+[i for i in make_time(100,2)]
+fit(Normal,[brownian(50,10)[end] for _ in 1:1000])
+fit(Normal,[brownian(50,10)[end] for _ in 1:1000])
+fit(Normal,[brownian(50,10)[end] for _ in 1:1000])
+sqrt(10)
+sqrt(10)
+fit(Normal,[brownian(50,10)[end] for _ in 1:1000])
+fit(Normal,[brownian(50,10)[end] for _ in 1:1000])
+fit(Normal,[brownian(50,1)[end] for _ in 1:1000])
+fit(Normal,[brownian(50,4)[end] for _ in 1:1000])
+fit(Normal,[brownian(50,4)[end] for _ in 1:1000])
+fit(Normal,[brownian(50,4)[end] for _ in 1:1000])
+fit(Normal,[brownian(50,4)[end] for _ in 1:1000])
+fit(Normal,[brownian(50,4)[end] for _ in 1:1000])
+brownian(1000,1)
+randn()
+fit(Normal,[b for _ in 1:1000 for b in brownian(50,10)])
+fit(Normal,[b for _ in 1:1000 for b in brownian(500,10)])
+fit(LogNormal,[b for _ in 1:1000 for b in brownian(500,10)])
+LogNormal
+fit(LogNormal,[b for _ in 1:1000 for b in geometric(brownian(500,10), make_time(500,10), 0, 1)])
+fit(LogNormal,[b for _ in 1:1000 for b in geometric(brownian(500,10), make_time(500,10), 0, 1)])
+fit(LogNormal,[b for _ in 1:1000 for b in geometric(brownian(500,10), make_time(500,10), 0, 1)])
+fit(LogNormal,[b for _ in 1:1000 for b in geometric(brownian(500,10), make_time(500,10), 2, .5)])
+fit(LogNormal,[b for _ in 1:1000 for b in geometric(brownian(500,10), make_time(500,10), 2, .5)])
+fit(LogNormal,[geometric(brownian(500,10), make_time(500,10), 2, .5)[end] for _ in 1:1000])
+fit(LogNormal,[geometric(brownian(500,10), make_time(500,10), 2, .5)[end] for _ in 1:1000])
+fit(LogNormal,[geometric(brownian(500,10), make_time(500,10), 2, .5)[end] for _ in 1:1000])
+plot(x = [geometric(brownian(500,10), make_time(500,10), 2, .5)[end] for _ in 1:1000], Geom.histogram)
+plot(x = [geometric(brownian(500,10), make_time(500,10), 2, .5)[end] for _ in 1:1000], Geom.histogram)
+plot(x = [geometric(brownian(500,10), make_time(500,10), 2, .5)[end] for _ in 1:1000], Geom.histogram)
+plot(x = [geometric(brownian(500,1), make_time(500,1), 2, .5)[end] for _ in 1:1000], Geom.histogram)
+plot(x = [geometric(brownian(500,1), make_time(500,1), 2, .5)[end] for _ in 1:1000], Geom.histogram)
+fit(LogNormal, [geometric(brownian(500,1), make_time(500,1), 2, .5)[end] for _ in 1:1000])
+fit(LogNormal, [geometric(brownian(500,1), make_time(500,1), 2, .5)[end] for _ in 1:1000])
+fit(LogNormal, [geometric(brownian(500,1), make_time(500,1), 2, .5)[end] for _ in 1:1000])
+fit(LogNormal, [geometric(brownian(500,1), make_time(500,1), 1, 1)[end] for _ in 1:1000])
+fit(LogNormal, [geometric(brownian(500,1), make_time(500,1), .5, 1)[end] for _ in 1:1000])
+fit(LogNormal, [geometric(brownian(500,1), make_time(500,1), .5, 1)[end] for _ in 1:1000])
+fit(LogNormal, [geometric(brownian(500,1), make_time(500,1), .5, 2)[end] for _ in 1:1000])
+fit(LogNormal, [geometric(brownian(500,1), make_time(500,1), .5, 2)[end] for _ in 1:1000])
+fit(LogNormal, [geometric(brownian(500,1), make_time(500,1), .5, 2)[end] for _ in 1:1000])
+fit(LogNormal, [geometric(brownian(500,1), make_time(500,1), 2, 2)[end] for _ in 1:1000])
+fit(LogNormal, [geometric(brownian(500,1), make_time(500,1), 2, 2)[end] for _ in 1:1000])
+fit(LogNormal, [geometric(brownian(500,1), make_time(500,1), 2, 2)[end] for _ in 1:1000])
+fit(LogNormal, [geometric(brownian(500,1), make_time(500,1), 1, 2)[end] for _ in 1:1000])
+fit(LogNormal, [geometric(brownian(500,1), make_time(500,1), 1, 2)[end] for _ in 1:1000])
+fit(LogNormal, [geometric(brownian(500,1), make_time(500,1), 0, 2)[end] for _ in 1:1000])
+fit(LogNormal, [geometric(brownian(500,1), make_time(500,1), 0, 2)[end] for _ in 1:1000])
+fit(LogNormal, [geometric(brownian(500,1), make_time(500,1), 5, 2)[end] for _ in 1:1000])
+fit(LogNormal, [geometric(brownian(500,1), make_time(500,1), 5, 2)[end] for _ in 1:1000])
+fit(LogNormal, [geometric(brownian(500,1), make_time(500,1), 5, 2)[end] for _ in 1:1000])
+fit(LogNormal, [geometric(brownian(500,1), make_time(500,1), 10, 2)[end] for _ in 1:1000])
+fit(LogNormal, [geometric(brownian(500,1), make_time(500,1), 10, 2)[end] for _ in 1:1000])
+fit(LogNormal, [geometric(brownian(500,1), make_time(500,1), 10, 2)[end] for _ in 1:1000])
+fit(LogNormal, [geometric(brownian(500,1), make_time(500,1), 10, 3)[end] for _ in 1:1000])
+fit(LogNormal, [geometric(brownian(500,1), make_time(500,1), 10, 3)[end] for _ in 1:1000])
