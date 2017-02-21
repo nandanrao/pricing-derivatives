@@ -382,3 +382,68 @@ fit(LogNormal, [geometric(brownian(500,1), make_time(500,1), 10, 2)[end] for _ i
 fit(LogNormal, [geometric(brownian(500,1), make_time(500,1), 10, 2)[end] for _ in 1:1000])
 fit(LogNormal, [geometric(brownian(500,1), make_time(500,1), 10, 3)[end] for _ in 1:1000])
 fit(LogNormal, [geometric(brownian(500,1), make_time(500,1), 10, 3)[end] for _ in 1:1000])
+using Distributions
+cdf(Normal())
+cdf(Normal
+)
+v(1/52, 29, 0.04, 30, .2, 1, 29)
+v(1/52, 29, 0.04, 30, .2, 1, 29)
+v(1/52, 29, 0.04, 30, .2, 1, 29)
+v(0/52, 29, 0.04, 30, .2, 1, 29)
+v(2/52, 29, 0.04, 30, .2, 1, 29)
+v(2/52, 29, 0.04, 30, .2, 1, 29)
+v(0/52, 29, 0.04, 30, .2, 1, 29)
+v(0/52, 29, 0.04, 30, .2, 1, 29)
+v(0/52, 29, 0.04, 30, .2, 1, 29)
+v(0/52, 29, 0.04, 30, .2, 2, 29)
+v(0/52, 29, 0.04, 30, .2, 1, 29)
+v(0/52, 29, 0.04, 30, .2, 1, 29)
+v(0/52, 29, 0.04, 30, .2, 1, 29)
+v(1/52, 29, 0.04, 30, .2, 1, 29)
+v(5/52, 29, 0.04, 30, .2, 1, 29)
+v(5/52, 29, 0.04, 30, .2, 4/52, 29)
+v(5/52, 29.0, 0.04, 30.0, .2, 4/52, 29.0)
+v(1/52, 29.0, 0.04, 30.0, .2, 4/52, 29.0)
+v(0/52, 29.0, 0.04, 30.0, .2, 4/52, 29.0)
+v(0/52, 29, .04, 30, .2, 4/52, 29)
+using Distributions
+v(0/52, 29, .04, 30, .2, 4/52, 29)
+v(0/52, 29, .04, 30, .2, 4/52, 29)
+v(0/52, 29, .04, 30, .2, 4/52, 29)
+v(0/52, 29, .04, 30, .2, 4/52, 29)
+v(0/52, 29, .04, 30, .2, 4/52, 29)
+LogNormal()
+None
+none
+null
+Null
+nothing
+using Base.test
+using Test
+using Base.Test
+brownian(5, 1)
+get_steps(1,2,3)
+get_steps([1,2,3])
+plot_vasicek(1000,2, 0, 1, 1)
+plot_vasicek(1000,2, 0, 1, 1)
+set_default_plot_size(9inch, 7inch)
+plot_vasicek(1000,2, 0, 1, 1)
+plot_vasicek(1000,2, 0, 1, 10)
+plot_vasicek(1000,2, 0, .1, 10)
+plot_vasicek(1000,2, 0, .2, 10, 0)
+plot_vasicek(1000,2, 0, .2, 10, 0.0)
+plot_vasicek(1000, 10, 0, .2, 10, 0.0)
+plot_vasicek(1000, 5, 0, .2, 10, 0.0)
+plot_vasicek(1000, 5, 0, .1, 10, 0.0)
+plot_vasicek(1000, 5, 0, .5, 10, 0.0)
+plot_vasicek(1000, 5, 0, .5, 10, 5.0)
+plot_vasicek(1000, 5, 0, 2, 10, 5.0)
+plot_vasicek(1000, 5, 0, 1, 10, 5.0)
+plot_vasicek(1000, 5, 0, 2, 0.1, 5.0)
+plot_vasicek(1000, 5, 0, 2, 0.01, 5.0)
+plot_vasicek(1000, 5, 0, 2, 0.05, 5.0)
+plot_vasicek(1000, 5, 0, 2, 0.1, 5.0)
+plot_vasicek(1000, 5, 0, 2, 0.2, 5.0)
+\alpha
+using DataFrames
+using Weave

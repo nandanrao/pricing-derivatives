@@ -52,7 +52,7 @@
 (defn squared [brownian time mu sigma] (map #($= (expt %1 2) - %2) brownian time))
 
 (save-chart "geometric_05.png"
-            (let [time (make-time 1000 1)]
+`            (let [time (make-time 1000 1)]
               (xy-plot time (plot-stochastic time 0.5 1 1000 geometric)
                        :legend true :x-label "Time" :y-label "Value"
                        :series-label "Geometric: mu = 0.5, sigma = 1")))

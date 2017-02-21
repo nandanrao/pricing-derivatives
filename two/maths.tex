@@ -1,0 +1,36 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage{mathtools,amsfonts,amssymb,amsmath, bm,commath,multicol}
+\usepackage{algorithmicx, tkz-graph, algorithm, fancyhdr, pgfplots}
+\usepackage{fancyvrb}
+
+\usepackage[noend]{algpseudocode}
+
+
+
+\begin{document}
+
+\section{}
+
+\begin{align*}
+Y_t &= e^{at}X_t \\
+\frac{d}{dt}Y_t &= ae^{at}X_t + e^{at}\frac{dX_t}{dt} + \frac{1}{2}*0 \\
+dY_t &= ae^{at}X_tdt + e^{at}dX_t \\
+dY_t &= ae^{at}X_tdt + e^{at}( a(m - X_t)dt + \sigma dB_t) \\
+dY_t &= ae^{at}X_tdt + ame^{at}dt - ae^{at}X_tdt + e^{at} \sigma dB_t \\
+dY_t &= ame^{at}dt + e^{at} \sigma dB_t \\
+\int_o^t dY_sds &= \int_0^t ame^{as}ds + \int_0^t e^{as} \sigma dB_s \\
+Y_t - Y_o &= \frac{1}{a} ame^{at} - \frac{1}{a}ame^{a*0} + \int_0^t e^{as} \sigma dB_s \\
+e^{at}X_t - X_0 &= me^{at} - me^{0} + \int_0^t e^{as} \sigma dB_s \\
+X_t &= X_0e^{-at} + me^{at}e^{-at} - me^{-at} + e^{-at}\sigma \int_0^t e^{as} dB_s \\
+X_t &= m - (X_0 - m)e^{-at} + e^{-at}\sigma \int_0^t e^{as} dB_s \\
+\end{align*}
+o
+\section{}
+\begin{align*}
+\mathbb{E}[X_t] &= \mathbb{E} \bigg[ m - (X_0 - m)e^{-at} + e^{-at}\sigma \int_0^t e^{as} dB_s \bigg] \\
+\mathbb{E}[X_t] &= m - (X_0 - m) e^{-at} + e^{-at}\sigma \int_0^t \mathbb{E} \bigg[  e^{as} dB_s \bigg]
+\end{align*}
+
+
+
+\end{document}
