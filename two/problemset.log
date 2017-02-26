@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.1.20)  17 FEB 2017 20:25
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.1.20)  26 FEB 2017 13:30
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -745,18 +745,18 @@ Document Style - pseudocode environments for use with the `algorithmicx' style
 ) (./problemset.aux)
 \openout1 = `problemset.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
  ABD: EveryShipout initializing macros
 (/usr/local/texlive/2016basic/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
@@ -823,13 +823,13 @@ e
 Package pgfplots Warning: running in backwards compatibility mode (unsuitable t
 ick labels; missing features). Consider writing \pgfplotsset{compat=1.14} into 
 your preamble.
- on input line 21.
+ on input line 20.
 
-LaTeX Font Info:    Try loading font information for U+msa on input line 29.
+LaTeX Font Info:    Try loading font information for U+msa on input line 26.
 (/usr/local/texlive/2016basic/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 29.
+LaTeX Font Info:    Try loading font information for U+msb on input line 26.
 
 (/usr/local/texlive/2016basic/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
@@ -838,7 +838,7 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 File: figures/problemset_2_1.pdf Graphic file (type pdf)
 
 <use figures/problemset_2_1.pdf>
-Package pdftex.def Info: figures/problemset_2_1.pdf used on input line 77.
+Package pdftex.def Info: figures/problemset_2_1.pdf used on input line 47.
 (pdftex.def)             Requested size: 390.0pt x 260.01079pt.
 
 
@@ -850,18 +850,18 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 [1{/usr/local/texlive/2016basic/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
 
 ]
-<figures/problemset_3_1.pdf, id=19, 433.62pt x 289.08pt>
+<figures/problemset_3_1.pdf, id=18, 433.62pt x 289.08pt>
 File: figures/problemset_3_1.pdf Graphic file (type pdf)
 
 <use figures/problemset_3_1.pdf>
-Package pdftex.def Info: figures/problemset_3_1.pdf used on input line 82.
+Package pdftex.def Info: figures/problemset_3_1.pdf used on input line 52.
 (pdftex.def)             Requested size: 390.0pt x 260.01079pt.
 
-<figures/problemset_4_1.pdf, id=20, 433.62pt x 289.08pt>
+<figures/problemset_4_1.pdf, id=19, 433.62pt x 289.08pt>
 File: figures/problemset_4_1.pdf Graphic file (type pdf)
 
 <use figures/problemset_4_1.pdf>
-Package pdftex.def Info: figures/problemset_4_1.pdf used on input line 87.
+Package pdftex.def Info: figures/problemset_4_1.pdf used on input line 57.
 (pdftex.def)             Requested size: 390.0pt x 260.01079pt.
 
 
@@ -881,30 +881,129 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[3 <./figures/problemset_4_1.pdf>] (./problemset.aux) ) 
+[3 <./figures/problemset_4_1.pdf>]
+Overfull \hbox (52.7749pt too wide) in paragraph at lines 105--105
+[] 
+ []
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[4]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[5] <figures/problemset_5_1.pdf, id=82, 433.62pt x 289.08pt>
+File: figures/problemset_5_1.pdf Graphic file (type pdf)
+
+<use figures/problemset_5_1.pdf>
+Package pdftex.def Info: figures/problemset_5_1.pdf used on input line 127.
+(pdftex.def)             Requested size: 390.0pt x 260.01079pt.
+
+<figures/problemset_6_1.pdf, id=83, 433.62pt x 289.08pt>
+File: figures/problemset_6_1.pdf Graphic file (type pdf)
+
+<use figures/problemset_6_1.pdf>
+Package pdftex.def Info: figures/problemset_6_1.pdf used on input line 132.
+(pdftex.def)             Requested size: 390.0pt x 260.01079pt.
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[6 <./figures/problemset_5_1.pdf>]
+<figures/problemset_7_1.pdf, id=103, 433.62pt x 289.08pt>
+File: figures/problemset_7_1.pdf Graphic file (type pdf)
+
+<use figures/problemset_7_1.pdf>
+Package pdftex.def Info: figures/problemset_7_1.pdf used on input line 137.
+(pdftex.def)             Requested size: 390.0pt x 260.01079pt.
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[7 <./figures/problemset_6_1.pdf> <./figures/problemset_7_1.pdf
+
+pdfTeX warning: pdflatex (file ./figures/problemset_7_1.pdf): PDF inclusion: mu
+ltiple pdfs with page group included in a single page
+>]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[8] <figures/problemset_8_1.pdf, id=142, 433.62pt x 289.08pt>
+File: figures/problemset_8_1.pdf Graphic file (type pdf)
+
+<use figures/problemset_8_1.pdf>
+Package pdftex.def Info: figures/problemset_8_1.pdf used on input line 179.
+(pdftex.def)             Requested size: 390.0pt x 260.01079pt.
+
+<figures/problemset_9_1.pdf, id=143, 433.62pt x 289.08pt>
+File: figures/problemset_9_1.pdf Graphic file (type pdf)
+
+<use figures/problemset_9_1.pdf>
+Package pdftex.def Info: figures/problemset_9_1.pdf used on input line 184.
+(pdftex.def)             Requested size: 390.0pt x 260.01079pt.
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[9 <./figures/problemset_8_1.pdf>]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[10 <./figures/problemset_9_1.pdf>]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[11] (./problemset.aux) ) 
 Here is how much of TeX's memory you used:
- 24983 strings out of 494447
- 623807 string characters out of 6166766
- 813548 words of memory out of 5000000
- 27865 multiletter control sequences out of 15000+600000
+ 25008 strings out of 494447
+ 624512 string characters out of 6166766
+ 819548 words of memory out of 5000000
+ 27885 multiletter control sequences out of 15000+600000
  12602 words of font info for 47 fonts, out of 8000000 for 9000
  319 hyphenation exceptions out of 8191
- 62i,11n,96p,734b,609s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/local/texlive/2016
-basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/
-2016basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texl
-ive/2016basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/local/t
-exlive/2016basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/loca
-l/texlive/2016basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/l
-ocal/texlive/2016basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr
-/local/texlive/2016basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></u
-sr/local/texlive/2016basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmsltt10.p
-fb></usr/local/texlive/2016basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy
-8.pfb>
-Output written on problemset.pdf (3 pages, 130874 bytes).
+ 62i,12n,96p,734b,609s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/local/texlive/2016basic/texmf-dist/fonts/type1/p
+ublic/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2016basic/texmf-dist/fonts/typ
+e1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2016basic/texmf-dist/fonts
+/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2016basic/texmf-dist/f
+onts/type1/public/amsfonts/cm/cmmi6.pfb></usr/local/texlive/2016basic/texmf-dis
+t/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2016basic/texmf-
+dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2016basic/tex
+mf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2016basic/t
+exmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2016basic
+/texmf-dist/fonts/type1/public/amsfonts/cm/cmsltt10.pfb></usr/local/texlive/201
+6basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive
+/2016basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texl
+ive/2016basic/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on problemset.pdf (11 pages, 264710 bytes).
 PDF statistics:
- 103 PDF objects out of 1000 (max. 8388607)
- 73 compressed objects within 1 object stream
+ 226 PDF objects out of 1000 (max. 8388607)
+ 159 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
- 28 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 53 words of extra memory for PDF output out of 10000 (max. 10000000)
 
