@@ -26,8 +26,9 @@ function expected_value(y, s, i, N, T, K)
     # time_left is like 1/T * (T - t)
     time_left = T/N * (N - i)
     mu = (y * T/N) + time_left * s - K
-    sigma = sqrt(time_left/3) #????????????
-    mean(TruncatedNormal(mu, sigma, 0, Inf))
+    sigma = sqrt(time_left/3) # why 3 ??? Seems to work???
+    prob_in_the_money = 1 - cdf(Normal(mu, sigma), 0)
+    prob_in_the_money * mean(TruncatedNormal(mu, sigma, 0, Inf))
 end
 
 function asian_value(S, K, N, T)
