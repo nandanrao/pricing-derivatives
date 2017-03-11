@@ -81,10 +81,24 @@ v(T, x, y) &= e^{0} \ \mathbb{E} \big[ \bigg( \frac{y}{T} +  0  - K \bigg)^+ | _
 v(T, x, y) &=  \bigg( \frac{y}{T} - K \bigg)^+
 \end{align*}
 %
-No idea what to show here, this doesn't seem right:
+We look at the condition when $x = 0$:
 \begin{align*}
-v(T, x, y) &= e^{-r(T-t)} \ \mathbb{E} \big[ H (y, Y_{t, 0, T}) | _{x = 0, y = Y_t} \big] \\
+v(T, x, y) &= e^{-r(T-t)} \ \mathbb{E} \big[ H (y, Y_{t, 0, T}) | _{x = 0, y = Y_t} \big]
 \end{align*}
+Recall the formula for Y and use the differential equation for the Black-Scholes model to see what happens if an asset price is ever at zero, it will from then on always stay at zero:
+\begin{align*}
+Y_{t, 0, T} &= \int_t^T \bigg( 0 + \int_t^u dS_s ds \bigg) du \\
+Y_{t, 0, T} &= \int_t^T \bigg( \int_t^u S_s(rdt + \sigma dW_t) ds \bigg) du \\
+Y_{t, 0, T} &= \int_t^T \bigg( \int_t^u 0(rdt + \sigma dW_t) ds \bigg) du \\
+Y_{t, 0, T} &= 0
+\end{align*}
+%
+As before, we have a deterministic payoff function:
+\begin{align*}
+v(t, 0, y) &=  e^{-r(T-t)} \ \mathbb{E} \big[ \bigg( \frac{y}{T} +  0  - K \bigg)^+ | _{x = x, y = y} \big] \\
+v(t, 0, y) &=  e^{-r(T-t)} \ \bigg( \frac{y}{T} - K \bigg)^+
+\end{align*}
+
 
 \subsection{K = 0}
 Using the fact that $K = 0$ and by construction $Y_T \geq 0$ we can remove the maximum:
