@@ -59,10 +59,10 @@ rV_t &= \partial_t v(t, S_t, Y_t) + x \partial_y v(t, S_t, Y_t) + rx \partial_x 
 
 
 \subsubsection{Boundary Conditions}
-We begin by more fully parameterizing our Y function and making use of the fact that our asset price is the result of geometric brownian motion steps:
+We begin by more fully parameterizing our Y function and and using the integral form of our asset price with initial price equal to x:
 \begin{align*}
 Y_{T} &= \int_0^T S_udu \\
-Y_{t, x, T} &= \int_t^T x \int_t^u W_x dx \ du
+Y_{t, x, T} &= \int_t^T \bigg(x +  \int_t^u dS_s ds \bigg) du
 \end{align*}
 We will re-write our payoff as a function of two variables by utilizing the fact that Y is an integral, and as such can be decomposed into the sum of two parts:
 \begin{align*}
@@ -73,22 +73,35 @@ This allows us to use the fact that $Y_{0, S_0, t}$ is $\mathcal{F}_t$ measurabl
 \begin{align*}
 \tilde{V_t} &= e^{-r(T-t)} \ \mathbb{E} \big[ H (y, Y_{t, x, T}) | _{x = S_t, y = Y_t} \big]
 \end{align*}
-And we solve with $y = Y_t$ and $S_t = x$ for our boundary conditions. The first when $x = 0$, it is easy to see that:
-$$
-Y_{t, 0, T} = \int_t^T 0 \int_t^u W_x dx \ du  = 0
-$$
-Therefore:
+%
+For the condition when $t = T$, the second parameter of our payoff function is the integral over 0 distance and therefore is equal to 0:
 \begin{align*}
-v(t, 0, y) &= e^{-r(T-t)} \ \mathbb{E} \big[ \bigg( \frac{y}{T} +  \frac{Y_{t,0,T}}{T} - K \bigg)^+ | _{x = 0, y = y} \big] \\
-v(t, 0, y) &= e^{-r(T-t)} \ \mathbb{E} \big[ \bigg( \frac{y}{T} - K \bigg)^+ | _{x = 0, y = y} \big] \\
-v(t, 0, y) &= e^{-r(T-t)} \ \bigg( \frac{y}{T} - K \bigg)^+  \\
+v(T, x, y) &= e^{-r(T-T)} \ \mathbb{E} \big[ H (y, 0) | _{x = S_t, y = Y_t} \big] \\
+v(T, x, y) &= e^{0} \ \mathbb{E} \big[ \bigg( \frac{y}{T} +  0  - K \bigg)^+ | _{x = x, y = y} \big] \\
+v(T, x, y) &=  \bigg( \frac{y}{T} - K \bigg)^+
 \end{align*}
-Similarly for the condition when $t = T$, the second parameter of our payoff function is the integral over 0 distance and therefore is equal to 0:
+%
+No idea what to show here, this doesn't seem right:
 \begin{align*}
-v(T, x, y) &= e^{-r(T-t)} \ \mathbb{E} \big[ \bigg( \frac{y}{T} +  \frac{Y_{T, x, T}}{T} - K \bigg)^+ | _{x = x, y = y} \big] \\
-v(T, x, y) &= e^{-r(T-t)} \ \mathbb{E} \big[ \bigg( \frac{y}{T} +  0  - K \bigg)^+ | _{x = x, y = y} \big] \\
-v(T, x, y) &= e^{-r(T-t)} \ \bigg( \frac{y}{T} - K \bigg)^+ \\
+v(T, x, y) &= e^{-r(T-t)} \ \mathbb{E} \big[ H (y, Y_{t, 0, T}) | _{x = 0, y = Y_t} \big] \\
 \end{align*}
 
-
+\subsection{K = 0}
+Using the fact that $K = 0$ and by construction $Y_T \geq 0$ we can remove the maximum:
+\begin{align*}
+V_t &= e^{-r(T -  t)} \tilde{\mathbb{E}}\bigg[ \bigg(\frac{1}{T}Y_T - K \bigg)^+ | \mathcal{F}_t \bigg] \\
+V_t &= e^{-r(T -  t)} \tilde{\mathbb{E}}\big[ \frac{1}{T}Y_T | \mathcal{F}_t \big]
+\end{align*}
+%
+We split $Y_T$ into its two components:
+\begin{align*}
+V_t &= e^{-r(T -  t)} \tilde{\mathbb{E}}\bigg[ \frac{1}{T}Y_t + \frac{1}{T} \int_t^T S_u du \ | \mathcal{F}_t \big] \\
+V_t &= e^{-r(T -  t)} \bigg( \frac{1}{T}Y_t + \tilde{\mathbb{E}}\bigg[ \frac{T-t}{T} \bigg( \frac{1}{T-t} \bigg) \int_t^T S_u du \ | \mathcal{F}_t \big] \bigg) \\
+V_t &= e^{-r(T -  t)} \bigg( \frac{1}{T}Y_t + \frac{T-t}{T} \tilde{\mathbb{E}}\bigg[  \mathbb{E} [S_{i \in [t,T]} ] \ | \mathcal{F}_t \bigg] \bigg)
+\end{align*}
+Given nested expectations we use the most binding, and using the fact that under the risk-nuetral probability our asset price is a martingale, we know that $\mathbb{E}[S_{i \in [t,T]} | \mathcal{F}_t] = S_t$:
+\begin{align*}
+V_t &= e^{-r(T -  t)} \bigg( \frac{1}{T}Y_t + \frac{T-t}{T} S_t  \bigg) \\
+V_t &= e^{-r(T -  t)} \bigg( \frac{1}{T}Y_t + S_t - \frac{t}{T} S_t  \bigg)
+\end{align*}
 \end{document}
