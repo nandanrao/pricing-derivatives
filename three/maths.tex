@@ -1,0 +1,56 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage{mathtools,amsfonts,amssymb,amsmath, bm,commath,multicol}
+\usepackage{algorithmicx, tkz-graph, algorithm, fancyhdr, pgfplots}
+\usepackage{fancyvrb}
+
+\usepackage[noend]{algpseudocode}
+
+\pagestyle{fancy}
+\fancyhf{}
+\rhead{21/2/2017 ::: Group yadadya}
+\lhead{15F020 ::: Problemset 3}
+\rfoot{\thepage}
+
+\DefineVerbatimEnvironment{juliaout}{Verbatim}{}
+\DefineVerbatimEnvironment{juliacode}{Verbatim}{fontshape=sl, fontsize=\tiny}
+\DefineVerbatimEnvironment{juliaterm}{Verbatim}{}
+
+
+\begin{document}
+
+
+\section{Pricing and Hedging Asian Options}
+
+
+
+\subsection{}
+
+\subsubsection{}
+
+\subsubsection{Boundary Conditions}
+We begin by adding a parameter to our Y function to make it a bit more expressive:
+\begin{align*}
+Y_{T} &= \int_0^T S_udu \\
+Y_{T} &= \int_0^T S_udu \\
+\end{align*}
+We will re-write our payoff as a function of two variables by utilizing the fact that Y is an integral, and as such can be decomposed into the sum of two parts:
+\begin{align*}
+H(Y_T) &= \bigg( \frac{1}{T}Y_T - K \bigg)^+ \\
+H(Y_{0,t}, Y_{t,T}) &= \bigg( \frac{1}{T}Y_{0,t} +  \frac{1}{T}Y_{t,T} - K \bigg)^+ \\
+\end{align*}
+This allows us to use the fact that $Y_{0,t}$ is $\mathcal{F}_t$ measurable and $Y_{t,T}$ is independent of $\mathcal{F}_t$ given $S_t$:
+\begin{align*}
+\tilde{V_t} &= e^{-r(T-t)} \ \mathbb{E} \big[ H (y, Y_{t, T}) | _{S_t, y = Y_{0,t}} \big] \\
+\end{align*}
+And we solve with $y = Y_t$ for our two boundary conditions:
+\begin{align*}
+v(t, 0, y) &= e^{-r(T-t)} \ \mathbb{E} \big[ \bigg( \frac{y}{T} +  \frac{Y_{t,T}}{T} - K \bigg)^+ | _{S_t, y = Y_t} \big] \\
+\end{align*}
+\begin{align*}
+v(T, x, y) &= e^{-r(T-t)} \ \mathbb{E} \big[ \bigg( \frac{y}{T} +  \frac{Y_{T,T}}{T} - K \bigg)^+ | _{S_t, y = Y_t} \big] \\
+v(T, x, y) &= e^{-r(T-t)} \ \mathbb{E} \big[ \bigg( \frac{y}{T} +  0 - K \bigg)^+ | _{S_t, y = Y_t} \big] \\
+v(T, x, y) &= e^{-r(T-t)} \ \mathbb{E} \big[ \bigg( \frac{y}{T} - K \bigg)^+ | _{S_t, y = Y_t} \big] \\
+\end{align*}
+
+
+\end{document}
