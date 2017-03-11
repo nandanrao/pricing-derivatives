@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.1.20)  26 FEB 2017 13:30
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.1.20)  26 FEB 2017 21:54
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -899,14 +899,14 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[5] <figures/problemset_5_1.pdf, id=82, 433.62pt x 289.08pt>
+[5] <figures/problemset_5_1.pdf, id=109, 433.62pt x 289.08pt>
 File: figures/problemset_5_1.pdf Graphic file (type pdf)
 
 <use figures/problemset_5_1.pdf>
 Package pdftex.def Info: figures/problemset_5_1.pdf used on input line 127.
 (pdftex.def)             Requested size: 390.0pt x 260.01079pt.
 
-<figures/problemset_6_1.pdf, id=83, 433.62pt x 289.08pt>
+<figures/problemset_6_1.pdf, id=110, 433.62pt x 289.08pt>
 File: figures/problemset_6_1.pdf Graphic file (type pdf)
 
 <use figures/problemset_6_1.pdf>
@@ -920,7 +920,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [6 <./figures/problemset_5_1.pdf>]
-<figures/problemset_7_1.pdf, id=103, 433.62pt x 289.08pt>
+<figures/problemset_7_1.pdf, id=130, 433.62pt x 289.08pt>
 File: figures/problemset_7_1.pdf Graphic file (type pdf)
 
 <use figures/problemset_7_1.pdf>
@@ -944,14 +944,14 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[8] <figures/problemset_8_1.pdf, id=142, 433.62pt x 289.08pt>
+[8] <figures/problemset_8_1.pdf, id=170, 433.62pt x 289.08pt>
 File: figures/problemset_8_1.pdf Graphic file (type pdf)
 
 <use figures/problemset_8_1.pdf>
 Package pdftex.def Info: figures/problemset_8_1.pdf used on input line 179.
 (pdftex.def)             Requested size: 390.0pt x 260.01079pt.
 
-<figures/problemset_9_1.pdf, id=143, 433.62pt x 289.08pt>
+<figures/problemset_9_1.pdf, id=171, 433.62pt x 289.08pt>
 File: figures/problemset_9_1.pdf Graphic file (type pdf)
 
 <use figures/problemset_9_1.pdf>
@@ -1000,10 +1000,10 @@ exmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2016basic
 6basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive
 /2016basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texl
 ive/2016basic/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on problemset.pdf (11 pages, 264710 bytes).
+Output written on problemset.pdf (11 pages, 285321 bytes).
 PDF statistics:
- 226 PDF objects out of 1000 (max. 8388607)
- 159 compressed objects within 2 object streams
+ 253 PDF objects out of 1000 (max. 8388607)
+ 177 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
  53 words of extra memory for PDF output out of 10000 (max. 10000000)
 
