@@ -20,7 +20,6 @@ geometric(brownian, time, mu, sigma) = [geom(b,mu,sigma,t) for (b,t) in zip(brow
 # Asians
 #######################################
 
-
 function expected_value(y, s, i, N, T, K)
     # T/N is like 1/T in discrete
     # time_left is like 1/T * (T - t)
@@ -39,7 +38,7 @@ end
 function make_path(r, mu, sigma, N, T)
     time = make_time(N, T)
     lambda = (mu - r)/sigma
-    W = brownian(N, T) - lambda*time
+    W = brownian(N, T) - lambda*time # adjusting the prices, probably not what we want...
     geometric(W, time, mu, sigma)
 end
 

@@ -21,11 +21,9 @@
 
 \section{Pricing and Hedging Asian Options}
 
+\subsection{Pricing}
 
-
-\subsection{}
-
-\subsubsection{}
+\subsubsection{Proving the PDE}
 
 Differentiating the discounted portfolio value with respect to time:
 \begin{align}
@@ -101,6 +99,7 @@ v(t, 0, y) &=  e^{-r(T-t)} \ \bigg( \frac{y}{T} - K \bigg)^+
 
 
 \subsection{K = 0}
+\subsubsection{Finding the Closed Form Solution}
 Using the fact that $K = 0$ and by construction $Y_T \geq 0$ we can remove the maximum:
 \begin{align*}
 V_t &= e^{-r(T -  t)} \tilde{\mathbb{E}}\bigg[ \bigg(\frac{1}{T}Y_T - K \bigg)^+ | \mathcal{F}_t \bigg] \\
@@ -110,12 +109,42 @@ V_t &= e^{-r(T -  t)} \tilde{\mathbb{E}}\big[ \frac{1}{T}Y_T | \mathcal{F}_t \bi
 We split $Y_T$ into its two components:
 \begin{align*}
 V_t &= e^{-r(T -  t)} \tilde{\mathbb{E}}\bigg[ \frac{1}{T}Y_t + \frac{1}{T} \int_t^T S_u du \ | \mathcal{F}_t \big] \\
-V_t &= e^{-r(T -  t)} \bigg( \frac{1}{T}Y_t + \tilde{\mathbb{E}}\bigg[ \frac{T-t}{T} \bigg( \frac{1}{T-t} \bigg) \int_t^T S_u du \ | \mathcal{F}_t \big] \bigg) \\
-V_t &= e^{-r(T -  t)} \bigg( \frac{1}{T}Y_t + \frac{T-t}{T} \tilde{\mathbb{E}}\bigg[  \mathbb{E} [S_{i \in [t,T]} ] \ | \mathcal{F}_t \bigg] \bigg)
+V_t &= e^{-r(T -  t)} \bigg( \frac{1}{T}Y_t + \frac{1}{T} \tilde{\mathbb{E}}\bigg[ \int_t^T S_u du \ | \mathcal{F}_t \big] \bigg)
 \end{align*}
-Given nested expectations we use the most binding, and using the fact that under the risk-nuetral probability our asset price is a martingale, we know that $\mathbb{E}[S_{i \in [t,T]} | \mathcal{F}_t] = S_t$:
+The expectation and integral can be swapped in this instance, and we use the fact that $S_t$ is a martingale and therefore the discounted expectation $\tilde{\mathbb{E}}[ S_u | \mathcal{F}_t] = e^{r(u - t)}S_t$:
 \begin{align*}
-V_t &= e^{-r(T -  t)} \bigg( \frac{1}{T}Y_t + \frac{T-t}{T} S_t  \bigg) \\
-V_t &= e^{-r(T -  t)} \bigg( \frac{1}{T}Y_t + S_t - \frac{t}{T} S_t  \bigg)
+V_t &= e^{-r(T -  t)} \bigg( \frac{1}{T}Y_t + \frac{S_t}{T} \int_t^T e^{r(u-t)} du \  \bigg)
 \end{align*}
+At which point we can simply integrate over the change in value due to interest rate:
+\begin{align*}
+V_t &= e^{-r(T -  t)} \bigg( \frac{1}{T}Y_t + \frac{S_t}{T}  \bigg(\frac{1}{r}e^{r(T-t)} - \frac{1}{r} \bigg) \  \bigg)
+\end{align*}
+And we obtain the following solution:
+\begin{align}
+V_t &= \frac{Y_t}{T}e^{-r(T -  t)} + \frac{S_t}{rT}(1 - e^{-r(T -  t)})
+\end{align}
+
+\subsubsection{Checking the Solution Against the PDE}
+We start by creating the partial derivatives of the closed form solution:
+w\begin{align*}
+&\partial_tv(t, S_t, Y_t) = \frac{rY_t}{T}e^{-r(T -  t)} - \frac{S_t}{T} e^{-r(T -  t)} \\
+&\partial_yv(t, S_t, Y_t) = \frac{1}{T}e^{-r(T -  t)} \\
+&\partial_xv(t, S_t, Y_t) = \frac{1}{rT} - \frac{1}{rT}e^{-r(T -  t)}
+\end{align*}
+There is clearly no second partial derivative with regards to x.
+\begin{align*}
+&rV_t = \partial_t v(t, S_t, Y_t) + x \partial_y v(t, S_t, Y_t) + rx \partial_x v(t, S_t, Y_t) \\
+&rV_t = \frac{rY_t}{T}e^{-r(T -  t)} - \frac{S_t}{T} e^{-r(T -  t)} + \frac{S_t}{T}e^{-r(T -  t)} + \frac{S_t}{T} - \frac{S_t}{T}e^{-r(T -  t)} \\
+&rV_t = \frac{rY_t}{T}e^{-r(T -  t)} + \frac{S_t}{T}(1 - e^{-r(T -  t)}) \\
+&r(\frac{Y_t}{T}e^{-r(T -  t)} + \frac{S_t}{rT}(1 - e^{-r(T -  t)})) = \frac{rY_t}{T}e^{-r(T -  t)} + \frac{S_t}{T}(1 - e^{-r(T -  t)})
+\end{align*}
+
+\subsection{Hedging Strategy}
+We repeat the $\partial_xv(t, S_t, Y_t)$ of (4) from above:
+\begin{align*}
+b_t &= \partial_xv(t, S_t, Y_t) \\
+b_t &= \frac{1}{rT}(1 - e^{-r(T -  t)})
+\end{align*}
+
+
 \end{document}
