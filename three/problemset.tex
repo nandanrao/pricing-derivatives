@@ -181,7 +181,6 @@ geometric(brownian, time, mu, sigma) = [geom(b,mu,sigma,t) for (b,t) in zip(brow
 discount(r, N, T, i) = exp(-r * T/N * (N - i))
 
 function expected_value(y, s, r, i, N, T)
-
     d = discount(r, N, T, i)
     y * T/N * d + s/r * T/N * (1 - d)
 end
